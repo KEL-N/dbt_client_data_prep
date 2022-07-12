@@ -5,7 +5,7 @@ with source as (
 ),
 
 final as ( 
-    select _airbyte_ab_id, firstname, gender, price, _airbyte_client_data_hasid 
+    select _airbyte_ab_id, "full name", gender, price, _airbyte_client_data_hasid 
     from source 
 )
 
