@@ -1,6 +1,6 @@
 with source as (
 
-    select * from {{ ref('client_data') }}
+    select * from {{ ref('_airbyte_raw_Client_Data') }}
 
 ),
 
