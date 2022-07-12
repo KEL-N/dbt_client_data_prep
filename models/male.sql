@@ -5,7 +5,7 @@ with source as (
 ),
 
 final as ( 
-    select _airbyte_ab_id, _airbyte_client_data_hasid 
+    select _airbyte_ab_id
     from source 
 )
 
