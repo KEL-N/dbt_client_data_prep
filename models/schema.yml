@@ -1,7 +1,7 @@
 version: 2
 
-models:
-  - name: "postgres".public.client_data
+sources:
+  - name: _airbyte_raw_Client_Data
     description: This table has basic information about a customer
 
     columns:
@@ -33,7 +33,7 @@ models:
           
 
 
-  - name: "postgres".public.client_data_address
+  - name: _airbyte_raw_Client_Data_Address
     description: This is a sub table to inheritance clients address 
 
     columns:
