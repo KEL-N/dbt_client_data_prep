@@ -13,13 +13,19 @@ profile: 'dbt_client_data_prep'
 # The `model-paths` config, for example, states that models in this project can be
 # found in the "models/" directory. You probably won't need to change these!
 model-paths: ["models"]
-analysis-paths: ["analyses"]
+docs-paths: ["docs"]
+analysis-paths: ["analysis"]
 test-paths: ["tests"]
-seed-paths: ["seeds"]
+data-paths: ["data"]
 macro-paths: ["macros"]
+seed-paths: ["seeds"]
 snapshot-paths: ["snapshots"]
 
-target-path: "target"  # directory which will store compiled SQL files
+
+target-path: "../build"  # directory which will store compiled SQL files
+log-path: "../logs"  # directory which will store DBT logs
+modules-path: "../dbt_modules"  # directory which will store external DBT dependencies
+
 clean-targets:         # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"
