@@ -18,7 +18,6 @@ analysis-paths: ["analysis"]
 test-paths: ["tests"]
 data-paths: ["data"]
 macro-paths: ["macros"]
-seed-paths: ["seeds"]
 snapshot-paths: ["snapshots"]
 
 
