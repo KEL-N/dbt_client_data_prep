@@ -1,11 +1,11 @@
 with source as (
 
-    select * from {{ source("public", "_airbyte_raw_Client_Data") }}
+    select * from {{ source("public", "client_data") }}
 
 ),
 
 final as ( 
-    select _airbyte_ab_id
+    select _airbyte_ab_id,"full name", gender, price, _airbyte_client_data_hasid 
     from source 
 )
 
